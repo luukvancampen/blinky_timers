@@ -1,0 +1,7 @@
+# ninja log v5
+1	44	1670327019465099055	CMakeFiles/boot_stage2.dir/Users/luukvancampen/zephyrproject/modules/hal/rpi_pico/src/rp2_common/boot_stage2/boot2_w25q080.S.obj	d501f0a3417e96a
+45	145	1670327019563158589	boot_stage2	e06a60331c729216
+45	145	1670327019563158589	boot_stage2.bin	e06a60331c729216
+45	145	1670327019563158589	boot_stage2.S	e06a60331c729216
+45	145	1670327019563158589	/Users/luukvancampen/Desktop/delftMsC/realTimeSystems/blink_threads/build/bootloader/boot_stage2.bin	e06a60331c729216
+45	145	1670327019563158589	/Users/luukvancampen/Desktop/delftMsC/realTimeSystems/blink_threads/build/bootloader/boot_stage2.S	e06a60331c729216

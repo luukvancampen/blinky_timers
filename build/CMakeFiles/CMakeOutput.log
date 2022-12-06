@@ -1,0 +1,54 @@
+The target system is: Generic - 3.2.99 - arm
+The host system is: Darwin - 21.6.0 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /Users/luukvancampen/zephyr-sdk-0.15.1/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+
+The C compiler identification is GNU, found in "/Users/luukvancampen/Desktop/delftMsC/realTimeSystems/blink_threads/build/CMakeFiles/3.25.0/CompilerIdC/CMakeCCompilerId.o"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /Users/luukvancampen/zephyr-sdk-0.15.1/arm-zephyr-eabi/bin/arm-zephyr-eabi-g++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+
+The CXX compiler identification is GNU, found in "/Users/luukvancampen/Desktop/delftMsC/realTimeSystems/blink_threads/build/CMakeFiles/3.25.0/CompilerIdCXX/CMakeCXXCompilerId.o"
+
+Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+arm-zephyr-eabi-gcc (Zephyr SDK 0.15.1) 12.1.0
+Copyright (C) 2022 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Performing C SOURCE FILE Test check_C__nostartfiles__nostdlib__isystem___Users_luukvancampen_zephyr_sdk_0_15_1_arm_zephyr_eabi_bin____lib_gcc_arm_zephyr_eabi_12_1_0_include___isystem___Users_luukvancampen_zephyr_sdk_0_15_1_arm_zephyr_eabi_bin____lib_gcc_arm_zephyr_eabi_12_1_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__no_pie__mcpu_cortex_m0plus__mthumb__mabi_aapcs__mfp16_format_ieee succeeded with the following output:
+Change Dir: /Users/luukvancampen/Desktop/delftMsC/realTimeSystems/blink_threads/build/CMakeFiles/CMakeScratch/TryCompile-BrdINl
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_14f14 && [1/2] Building C object CMakeFiles/cmTC_14f14.dir/src.c.obj
+[2/2] Linking C executable cmTC_14f14
+
+
+Source file was:
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test check_fmacro_prefix_map__Users_luukvancampen_Desktop_delftMsC_realTimeSystems_blink_threads_CMAKE_SOURCE_DIR_C__nostartfiles__nostdlib__isystem___Users_luukvancampen_zephyr_sdk_0_15_1_arm_zephyr_eabi_bin____lib_gcc_arm_zephyr_eabi_12_1_0_include___isystem___Users_luukvancampen_zephyr_sdk_0_15_1_arm_zephyr_eabi_bin____lib_gcc_arm_zephyr_eabi_12_1_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0 succeeded with the following output:
+Change Dir: /Users/luukvancampen/Desktop/delftMsC/realTimeSystems/blink_threads/build/CMakeFiles/CMakeScratch/TryCompile-JbXhAP
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_713b1 && [1/2] Building C object CMakeFiles/cmTC_713b1.dir/src.c.obj
+[2/2] Linking C executable cmTC_713b1
+
+
+Source file was:
+int main(void) { return 0; }
+

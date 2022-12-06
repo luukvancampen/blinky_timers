@@ -1,0 +1,13 @@
+# Target labels
+ second_stage_bootloader
+# Source files and their labels
+/Users/luukvancampen/Desktop/delftMsC/realTimeSystems/blink_threads/build/modules/hal_rpi_pico/CMakeFiles/second_stage_bootloader
+/Users/luukvancampen/Desktop/delftMsC/realTimeSystems/blink_threads/build/modules/hal_rpi_pico/CMakeFiles/second_stage_bootloader.rule
+/Users/luukvancampen/Desktop/delftMsC/realTimeSystems/blink_threads/build/modules/hal_rpi_pico/CMakeFiles/second_stage_bootloader-complete.rule
+/Users/luukvancampen/Desktop/delftMsC/realTimeSystems/blink_threads/build/modules/hal_rpi_pico/second_stage_bootloader-prefix/src/second_stage_bootloader-stamp/second_stage_bootloader-build.rule
+/Users/luukvancampen/Desktop/delftMsC/realTimeSystems/blink_threads/build/modules/hal_rpi_pico/second_stage_bootloader-prefix/src/second_stage_bootloader-stamp/second_stage_bootloader-configure.rule
+/Users/luukvancampen/Desktop/delftMsC/realTimeSystems/blink_threads/build/modules/hal_rpi_pico/second_stage_bootloader-prefix/src/second_stage_bootloader-stamp/second_stage_bootloader-download.rule
+/Users/luukvancampen/Desktop/delftMsC/realTimeSystems/blink_threads/build/modules/hal_rpi_pico/second_stage_bootloader-prefix/src/second_stage_bootloader-stamp/second_stage_bootloader-install.rule
+/Users/luukvancampen/Desktop/delftMsC/realTimeSystems/blink_threads/build/modules/hal_rpi_pico/second_stage_bootloader-prefix/src/second_stage_bootloader-stamp/second_stage_bootloader-mkdir.rule
+/Users/luukvancampen/Desktop/delftMsC/realTimeSystems/blink_threads/build/modules/hal_rpi_pico/second_stage_bootloader-prefix/src/second_stage_bootloader-stamp/second_stage_bootloader-patch.rule
+/Users/luukvancampen/Desktop/delftMsC/realTimeSystems/blink_threads/build/modules/hal_rpi_pico/second_stage_bootloader-prefix/src/second_stage_bootloader-stamp/second_stage_bootloader-update.rule
