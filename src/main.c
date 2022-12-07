@@ -24,7 +24,7 @@ int cnt = 0;
 static const struct gpio_dt_spec led = GPIO_DT_SPEC_GET(LED0_NODE, gpios);
 
 
-void blink(const struct led *led, uint32_t sleep_ms, uint32_t id)
+void blink(const struct led *led, uint32_t sleep_ms, uint32_t id, int on_off)
 {
 	const struct gpio_dt_spec *spec = &led->spec;
 	int ret;
@@ -41,7 +41,7 @@ void blink(const struct led *led, uint32_t sleep_ms, uint32_t id)
 		return;
 	}
 
-		gpio_pin_set(spec->port, spec->pin, cnt % 2);
+		gpio_pin_set(spec->port, spec->pin, on_off);
 
 		//struct printk_data_t tx_data = { .led = id, .cnt = cnt };
 
@@ -53,28 +53,40 @@ void blink(const struct led *led, uint32_t sleep_ms, uint32_t id)
 
 		//k_fifo_put(&printk_fifo, mem_ptr);
 
-		k_msleep(sleep_ms);
-		cnt++;
+		
+		
 	
 }
 
+void blink_on_handler(struct k_work *work) {
+  blink(&led0, 100, 0, 1);
+}
+
 // This is the actual work to be done
-void blink_work_handler(struct k_work *work) {
-  blink(&led0, 100, 0);
+void blink_off_handler(struct k_work *work) {
+  blink(&led0, 100, 0, 0);
 }
 
 // This macro defines the work item
-K_WORK_DEFINE(blink_work, blink_work_handler);
+K_WORK_DEFINE(blink_on_work, blink_on_handler);
+
+K_WORK_DEFINE(blink_off_work, blink_off_handler);
 
 // This function is called on every timer expiry
-void blink_submit(struct k_timer *timer_id) {
-  k_work_submit(&blink_work);
+void blink_on_submit(struct k_timer *timer_id) {
+  k_work_submit(&blink_on_work);
+}
+
+void blink_off_submit(struct k_timer *timer_id) {
+  k_work_submit(&blink_off_work);
 }
 
 // Initialize the timer
 //k_timer_init(&blink_timer, blink_submit, NULL);
-K_TIMER_DEFINE(blink_timer, blink_submit, NULL);
+K_TIMER_DEFINE(blink_on_timer, blink_on_submit, NULL);
+K_TIMER_DEFINE(blink_off_timer, blink_off_submit, NULL);
 
 void main(void) {
-  k_timer_start(&blink_timer, K_SECONDS(2), K_SECONDS(1));
+  k_timer_start(&blink_on_timer, K_SECONDS(2), K_SECONDS(2));
+  k_timer_start(&blink_off_timer, K_SECONDS(2), K_SECONDS(1));
 }
