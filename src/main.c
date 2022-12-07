@@ -88,5 +88,5 @@ K_TIMER_DEFINE(blink_off_timer, blink_off_submit, NULL);
 
 void main(void) {
   k_timer_start(&blink_on_timer, K_SECONDS(2), K_SECONDS(2));
-  k_timer_start(&blink_off_timer, K_SECONDS(2), K_SECONDS(1));
+  k_timer_start(&blink_off_timer, K_SECONDS(1), K_SECONDS(1));
 }
